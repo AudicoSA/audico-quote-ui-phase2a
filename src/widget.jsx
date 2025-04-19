@@ -64,7 +64,7 @@ export default function AudicoQuoteWidget() {
             <button
               key={m}
               onClick={() => setMode(m)}
-              className={\`px-4 py-2 rounded-full transition \${m === mode ? "bg-blue-600 text-white" : "bg-gray-100 text-gray-700 hover:bg-gray-200"}\`}
+              className={`px-4 py-2 rounded-full transition ${m === mode ? "bg-blue-600 text-white" : "bg-gray-100 text-gray-700 hover:bg-gray-200"}`}
             >
               {m}
             </button>
@@ -78,7 +78,7 @@ export default function AudicoQuoteWidget() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.25 }}
-              className={\`max-w-[75%] p-4 rounded-xl shadow-md \${msg.sender === "ai" ? "bg-blue-50 text-gray-900 rounded-bl-none" : "bg-green-50 text-gray-900 self-end rounded-br-none"}\`}
+              className={`max-w-[75%] p-4 rounded-xl shadow-md ${msg.sender === "ai" ? "bg-blue-50 text-gray-900 rounded-bl-none" : "bg-green-50 text-gray-900 self-end rounded-br-none"}`}
             >
               {msg.text}
             </motion.div>
